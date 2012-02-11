@@ -1,6 +1,0 @@
-#labels Featured
-
-= Frequently Asked Questions (FAQs) =
-
-
-= Support Contacts =
