@@ -1,4 +1,3 @@
-#Surge Analysis Program
 
 = Introduction =
 
