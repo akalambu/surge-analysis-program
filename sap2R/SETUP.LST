@@ -1,0 +1,39 @@
+[Bootstrap]
+SetupTitle=Install
+SetupText=Copying Files, please stand by.
+CabFile=sap21.CAB
+Spawn=Setup1.exe
+Uninstal=st6unst.exe
+TmpDir=msftqws.pdw
+Cabs=2
+
+[Bootstrap Files]
+File1=@VB6STKIT.DLL,$(WinSysPathSysFile),,,6/18/98 12:00:00 AM,102912,6.0.81.69
+File2=@COMCAT.DLL,$(WinSysPathSysFile),$(DLLSelfRegister),,5/31/98 12:00:00 AM,22288,4.71.1460.1
+File3=@MSVCRT40.DLL,$(WinSysPathSysFile),,,5/31/98 12:00:00 AM,326656,4.21.0.0
+File4=@STDOLE2.TLB,$(WinSysPathSysFile),$(TLBRegister),,4/23/99 10:22:00 PM,17920,2.40.4275.1
+File5=@ASYCFILT.DLL,$(WinSysPathSysFile),,,4/23/99 10:22:00 PM,147728,2.40.4275.1
+File6=@OLEPRO32.DLL,$(WinSysPathSysFile),$(DLLSelfRegister),,4/23/99 10:22:00 PM,164112,5.0.4275.1
+File7=@OLEAUT32.DLL,$(WinSysPathSysFile),$(DLLSelfRegister),,4/23/99 10:22:00 PM,598288,2.40.4275.1
+File8=@msvbvm60.dll,$(WinSysPathSysFile),$(DLLSelfRegister),,6/6/99 3:08:30 PM,1384448,6.0.84.95
+
+[IconGroups]
+Group0=Sap2
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Setup]
+Title=Surge Analysis Program Version 2
+DefaultDir=c:\iisc
+AppExe=sap2.exe
+AppToUninstall=sap2.exe
+
+[Setup1 Files]
+File1=@sapf2.exe,$(AppPath),,,7/22/00 12:14:58 PM,295936,0.0.0.0
+File2=@sap2.xls,$(AppPath),,,7/17/00 8:56:16 AM,219136,0.0.0.0
+File3=@mscomctl.ocx,$(WinSysPath),$(DLLSelfRegister),$(Shared),5/26/00 2:14:08 AM,1072643,6.0.84.98
+File4=@COMDLG32.OCX,$(WinSysPath),$(DLLSelfRegister),$(Shared),6/24/98 12:00:00 AM,140096,6.0.81.69
+File5=@msflxgrd.ocx,$(WinSysPath),$(DLLSelfRegister),$(Shared),5/26/00 2:14:08 AM,250883,6.0.84.18
+File6=@pumpch.dll,$(AppPath),,,7/22/00 10:29:36 AM,159232,0.0.0.0
+File7=@sap2.exe,$(AppPath),,,7/22/00 12:24:06 PM,1007616,1.0.0.0
+
